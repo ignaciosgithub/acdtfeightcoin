@@ -1,4 +1,3 @@
-// Copyright (c) 2011-2017 The Cryptonote developers
 // Copyright (c) 2014-2017 XDN developers
 // Copyright (c) 2016-2017 BXC developers
 // Copyright (c) 2017 Royalties developers
@@ -29,7 +28,7 @@ namespace parameters {
   const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 30; //
 
   // MONEY_SUPPLY - total number coins to be generated
-  const uint64_t MONEY_SUPPLY                                  = (uint64_t)(2100000000000); //-1
+  const uint64_t MONEY_SUPPLY                                  = (uint64_t)(210000000000); //-1
   const uint32_t MANDATORY_TRANSACTION                         = 0;
   const uint32_t KILL_HEIGHT                                   = 0;
   const uint64_t TAIL_EMISSION_REWARD                          = 0;
@@ -109,8 +108,8 @@ namespace parameters {
   const uint64_t REWARD_INCREASE_INTERVAL                      = (UINT64_C(2640));
 
 
-const char     CRYPTONOTE_NAME[]                             = "intucoin";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001904e029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101128f6e2f5ff1cc0d95bf80839501c07d79fcb80726f3ca8cdc094b0e2d89dfd3";
+const char     CRYPTONOTE_NAME[]                             = "ACDTcoin";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001904e029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101a6d188a5f0d5dabd822a967c138e6ee31b83a3e0b55d570a270393c4f71e7bfc";
 
 const uint32_t GENESIS_NONCE                                 = 70;
 const uint64_t GENESIS_TIMESTAMP                             = 1515479625;
@@ -126,8 +125,8 @@ const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        =  10000;  //by def
 const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  500;    //by default, blocks count in blocks downloading
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         =  1000;
 
-const int      P2P_DEFAULT_PORT                              = 17236;
-const int      RPC_DEFAULT_PORT                              = 18236;
+const int      P2P_DEFAULT_PORT                              = 17235;
+const int      RPC_DEFAULT_PORT                              = 18234;
 
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                =  1000;
 const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT                 =  5000;
@@ -145,10 +144,8 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          //
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1510d13336228debfee9c918ce505efe225d8c94d045fa115";
 
 const std::initializer_list<const char*> SEED_NODES = {
-   "140.82.29.104:17236",
-   "45.77.160.124:17236",
-   "77.93.206.165:17236",
-   "45.77.178.125:17236"
+   "13.58.54.190:17235",
+   "13.59.186.119:17235"
 };
 
 struct CheckpointData {
@@ -168,7 +165,6 @@ const std::initializer_list<CheckpointData> CHECKPOINTS = {
 };
 
 } // CryptoNote
-
 #define ALLOW_DEBUG_COMMANDS
 
 #endif
